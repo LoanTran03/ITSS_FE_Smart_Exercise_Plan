@@ -50,7 +50,7 @@ const Sidebar = (props) => {
             //{/********SubHeader**********/}
             if (
               item.title !== "Dashboard" &&
-              item.title !== "KPI" &&
+              item.title !== "Target" &&
               item.title !== "Setting" &&
               item.title !== "Update progress" &&
               !devMode

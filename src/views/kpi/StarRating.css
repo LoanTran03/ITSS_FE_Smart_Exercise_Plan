@@ -1,0 +1,21 @@
+.star-rating {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 80px;
+    color: #ccc; /* Màu xám cho các sao chưa chọn */
+    transition: color 0.2s ease;
+    padding: 20px;
+  }
+  
+  .star.filled {
+    color: gold; /* Màu vàng cho sao được chọn */
+  }
+  
+  .star:hover {
+    color: gold; /* Màu vàng khi hover */
+  }
+  

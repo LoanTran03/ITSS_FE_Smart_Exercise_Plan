@@ -9,14 +9,15 @@ import ExRadio from "../views/FormElements/ExRadio.js";
 import ExSlider from "../views/FormElements/ExSlider.js";
 import ExSwitch from "../views/FormElements/ExSwitch.js";
 import FormLayouts from "../views/FormLayouts/FormLayouts.js";
-import KPI from "../views/kpi/KPI.js";
+import Target from "../views/kpi/Target.js";
 import AddKPI from "../views/kpi/AddKPI.js";
 import Personal from "../views/personal/Personal.js";
 import KPIFake from "../views/kpi/KPIFake.js";
-import KPIDetail from "../views/kpi/KPIDetail.js";
+import TargetDetailWeightLoss from "../views/kpi/TargetDetailWeightLoss.js";
+import TargetDetailWeightGain from "../views/kpi/TargetDetailWeightGain.js";
+import TargetDetailHealthImprove from "../views/kpi/TargetDetailHealthImprove.js";
 import Setting from "../views/Setting/Setting.js";
 import UpdateProgress from "../views/update-progress/UpdateProgress.js";
-import KPIDetailFake from "../views/kpi/KPIDetailFake.js";
 import Login from "../views/login/LoginPage.js";
 import SignUp from "../views/signup/SignupPage.js";
 import AddAssignment from "../views/kpi/AddAssignment.js";
@@ -42,14 +43,16 @@ const ThemeRoutes = [
       { path: "/form-elements/radio", element: <ExRadio /> },
       { path: "/form-elements/slider", element: <ExSlider /> },
       { path: "/form-elements/switch", element: <ExSwitch /> },
-      { path: "/kpi", element: <KPI /> },
+      { path: "/target", element: <Target /> },
       { path: "/setting", element: <Setting /> },
       { path: "/kpi/add-kpi", element: <AddKPI /> },
       { path: "/kpi/add-success", element: <KPIFake /> },
-      { path: "/kpi/detail", element: <KPIDetail /> },
+      { path: "/target/detail1", element: <TargetDetailWeightLoss /> },
+      { path: "/target/detail2", element: <TargetDetailWeightGain /> },
+      { path: "/target/detail3", element: <TargetDetailHealthImprove /> },
       { path: "/update-progress", element: <UpdateProgress /> },
       { path: "/personal", element: <Personal /> },
-      { path: "/kpi/detail-add", element: <KPIDetailFake /> },
+      // { path: "/kpi/detail-add", element: <KPIDetailFake /> },
       { path: "/kpi/add-assignment", element: <AddAssignment /> },
     ],
   },

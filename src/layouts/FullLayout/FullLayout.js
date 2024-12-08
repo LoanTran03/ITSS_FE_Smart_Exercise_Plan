@@ -71,7 +71,7 @@ const FullLayout = () => {
           </Box>
           <Footer />
         </Container>
-        <ChatBot showChat={showChat} setShowChat={setShowChat} />
+        {/* <ChatBot showChat={showChat} setShowChat={setShowChat} /> */}
       </PageWrapper>
     </MainWrapper>
   );

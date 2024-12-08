@@ -18,9 +18,9 @@ const Menuitems = [
     href: "/dashboards",
   },
   {
-    title: "KPI",
+    title: "Target",
     icon: AutoGraphIcon,
-    href: "/kpi",
+    href: "/target",
   },
   {
     title: "Update progress",
