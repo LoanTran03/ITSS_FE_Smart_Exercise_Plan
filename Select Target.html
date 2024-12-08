@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target Screen</title>
+    <link rel="stylesheet" href="Select Target.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>LOGO</h2>
+      <ul>
+        <li>
+          <span class="icon-star">★</span><a href="Dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <span class="icon-star">★</span><a href="Schedule.html">Schedule</a>
+        </li>
+        <li class="active">
+          <span class="icon-star">★</span><a href="Target.html">Target</a>
+        </li>
+        <li>
+          <span class="icon-star">★</span
+          ><a href="Statistics.html">Statistics</a>
+        </li>
+        <li>
+          <span class="icon-star">★</span><a href="Nutrition.html">Nutrition</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Notification and Avatar -->
+      <div class="top-bar">
+        <span class="icon-bell"><i class="fas fa-bell"></i></span>
+        <img
+          src="6-anh-dai-dien-trang-inkythuatso-03-15-26-36.jpg"
+          alt="User Avatar"
+          class="avatar"
+        />
+      </div>
+
+      <!-- Breadcrumb and Title -->
+      <div class="breadcrumb">
+        <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-angle-right"></i>
+        <a href="Target.html"><i class="fas fa-star"></i> Target</a>
+      </div>
+
+      <h1 class="page-title">Target</h1>
+
+      <!-- Line under title -->
+      <div class="underline"></div>
+
+      <!-- Cards Container -->
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Weight Gain</h3>
+            <button class="set-active" onclick="toggleActive(this)">
+              Set Active
+            </button>
+          </div>
+          <div class="progress-section">
+            <div class="progress-bar">
+              <div style="width: 10%"><span>10%</span></div>
+            </div>
+            <a href="Details.html">
+              <button class="btn btn-detail">Details</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Weight Loss</h3>
+            <button class="set-active" onclick="toggleActive(this)">
+              Set Active
+            </button>
+          </div>
+          <div class="progress-section">
+            <div class="progress-bar">
+              <div style="width: 10%"><span>10%</span></div>
+            </div>
+            <button class="btn btn-detail">Details</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Health Improvement</h3>
+            <button class="set-active" onclick="toggleActive(this)">
+              Set Active
+            </button>
+          </div>
+          <div class="progress-section">
+            <div class="progress-bar">
+              <div style="width: 0%"><span>0%</span></div>
+            </div>
+            <button class="btn btn-detail">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleActive(button) {
+        const buttons = document.querySelectorAll(".set-active");
+        buttons.forEach((btn) => {
+          btn.classList.remove("active");
+          btn.textContent = "Set Active";
+        });
+
+        button.classList.add("active");
+        button.textContent = "Active";
+      }
+    </script>
+  </body>
+</html>
