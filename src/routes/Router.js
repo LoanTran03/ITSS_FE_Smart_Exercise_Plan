@@ -22,6 +22,7 @@ import Login from "../views/login/LoginPage.js";
 import SignUp from "../views/signup/SignupPage.js";
 import AddAssignment from "../views/kpi/AddAssignment.js";
 import LandingPage from "../views/landingPage/LandingPage.js";
+import Statistics from "../views/Statistics/Statistics.js";
 
 /*****Routes******/
 
@@ -54,6 +55,8 @@ const ThemeRoutes = [
       { path: "/personal", element: <Personal /> },
       // { path: "/kpi/detail-add", element: <KPIDetailFake /> },
       { path: "/kpi/add-assignment", element: <AddAssignment /> },
+      { path: "/", element: <Navigate to="/app" /> },
+      { path: "statistics", element: <Statistics /> },
     ],
   },
 ];
